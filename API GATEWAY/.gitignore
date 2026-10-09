@@ -1,0 +1,15 @@
+node_modules/
+
+# Paquete de la Lambda (scripts/deploy.mjs lo regenera en cada despliegue).
+.build/
+
+# Configuración local y credenciales. .env.example sí se versiona.
+.env
+.env.*
+!.env.example
+
+# Terraform: ver infra/.gitignore (estado, proveedores, overrides de tflocal).
+
+# Sistema
+.DS_Store
+Thumbs.db
