@@ -29,7 +29,13 @@ El MVP se evalúa contra un **entorno desplegado en AWS real**: una copia comple
 Descarga el proyecto y abre la app conectada a AWS (Mac, Linux, o Windows con PowerShell 7 o CMD):
 
 ```bash
-git clone https://github.com/Tw3kda/ACR-dev.git && cd ACR-dev && node iniciar-mvp.mjs --aws
+git clone https://github.com/Tw3kda/ACR-dev.git
+```
+```
+cd ACR-dev
+```
+```
+node iniciar-mvp.mjs --aws
 ```
 
 En Windows PowerShell 5.1 se separan los comandos con `;` en lugar de `&&`. Si el proyecto ya está descargado, basta con `node iniciar-mvp.mjs --aws` dentro de la carpeta. La primera vez instala las dependencias de la app (unos minutos), comprueba que el API de AWS responde y muestra un código QR. Este modo no arranca ningún API ni web locales.
